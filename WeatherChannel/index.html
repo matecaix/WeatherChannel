@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Channel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="encabezado">
+        <h1>Weather Channel</h1>
+        <input type="text" placeholder="Ingresá una ciudad" class="input">
+        <button class="btn">ENVIAR</button>
+    </div>
+    <div class="container">
+        <ul class="ciudades">
+            <li>
+                <span id="ciudad"></span><br>
+                <span id="Temp"></span><span id="grados"></span><br>
+                <img id="wicon" src="" alt="Ícono del tiempo"><br>
+                <span id="descripcion"></span><br>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="https://api.openweathermap.org/data/2.5/weather?q=buenos%20aires&appid=6fe5b39433ebb1b24f12bbb555b14d1a&units=metric&lang=es"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
